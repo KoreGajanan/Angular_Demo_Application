@@ -1,0 +1,41 @@
+<h1>Educating For Better tomorrow</h1>
+
+<!-- Use of ngIf in case of hardcoded value -->
+<h1 *ngIf="true">Pune</h1>
+
+<!-- We can use any property with ngIf -->
+<h1 *ngIf="flag">Maharashtra</h1>
+
+<!-- We can also perform if else partition -->
+<h1 *ngIf="flag; else Otherpart">Hello</h1>
+
+<ng-template #Otherpart> 
+<h1>World</h1>
+</ng-template>
+
+<!-- We can also use below syntax for if else -->
+<h1 *ngIf="flag; then ifblock; else elseblock;"></h1>
+
+<ng-template #ifblock>
+    <h1>
+        Marvellous If Block
+    </h1>
+</ng-template>
+
+<ng-template #elseblock> 
+    <h1>
+        Marvellous Else Block
+    </h1>
+</ng-template>
+
+<!-- Displayed if a is more than b -->
+<h1 *ngIf="a < b; else blockelse">A is greater than B</h1>
+
+<ng-template #blockelse> 
+    <h1>B is greater than A </h1>
+</ng-template>
+
+<!-- Displayed if "str" contain data "Gajanan"  -->
+<h1 *ngIf="str=='Gajanan'">Hello Gajanan</h1>
+
+

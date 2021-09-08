@@ -1,0 +1,10 @@
+<h1>Marvellous Infosystems Batches</h1>
+
+<div [ngSwitch]="Batch" style="margin-top: 20px;">
+    <h3 *ngSwitchCase="'PPA'">You select Pre-Placement Activity Batch</h3>
+    <h3 *ngSwitchCase="'LB'">You select Logic Building Batch</h3>
+    <h3 *ngSwitchCase="'WEB'">You select Web Development Batch</h3>
+    <h3 *ngSwitchCase="'Project'">You select Industrial Project Batch</h3>
+    <h3 *ngSwitchDefault>Wrong Selection</h3>
+
+</div>

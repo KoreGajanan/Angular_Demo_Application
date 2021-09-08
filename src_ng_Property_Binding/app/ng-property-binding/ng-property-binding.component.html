@@ -1,0 +1,36 @@
+<html>
+    <!-- Only textbox -->
+    <input type="text">
+    <br>
+
+    <!-- Text box with attribute -->
+    <input type="text" value="Marvellous">
+    <br>
+
+    <!-- Hardcoded attribute -->
+    <input type="text" id="1" value="Marvellous">
+    <br>
+
+    <!-- Text box with attribute and property binding -->
+    <input type="text" [id]="MyID" value="Marvellous">
+    <br>
+
+    <!-- Property binding as string interpolation -->
+    <!-- String interpolation only works with string attributes -->
+    <input type="text" id=" {{MyID}}" value="Marvellous">
+    <br>
+
+    <!--Text box with disabled attribute -->
+    <input type="text" disabled = "true" value="Marvellous">
+    <br>
+
+    <!-- Text obx with disabled attribute with property binding -->
+    <input type="text" [disabled]="IsSet" value="Marvellous">
+    <br>
+    
+    <!-- Using bind tag we can also set the property -->
+
+    <input type="text" bind-id="MyID" value="Marvellous">
+    <br>
+    
+</html>

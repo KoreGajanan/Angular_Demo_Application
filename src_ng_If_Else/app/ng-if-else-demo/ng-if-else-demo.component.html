@@ -1,0 +1,17 @@
+<h3>Please enter batch name : </h3>
+
+<input type="text" (input)="fun($event)">
+<p></p>
+<button (click)="gun()">Submit</button>
+
+<!-- Now we can display that data on page using string interpolation -->
+
+<p *ngIf="flag; else elseblock"> {{ str }} </p>
+
+<ng-template #elseblock>
+    <h4>Please selct batch :</h4>
+    <h4>Our batches : </h4>
+    <h4>PPA</h4>
+    <h4>LB</h4>
+    <h4>Angular</h4>
+</ng-template>
