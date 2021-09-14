@@ -1,0 +1,30 @@
+
+<div style="text-align: center;" >
+    <h2>Marevellous login Form</h2>
+
+    <form [formGroup]="MarvellousForm">
+        <div class="form-group">
+            <label >User Name: </label>
+            <input type="text" class="form-control" formControlName="username">
+
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label>Password: </label>
+            <input type="text" class="form-control" formControlName="password">
+
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Confirm Password: </label>
+            <input type="text" class="form-control" formControlName="confirmpass">
+
+        </div> <br>
+
+        <button type="submit" class="btn btn-primary" >Login</button>
+    </form>
+
+{{ MarvellousForm.value | json }}
+</div> 
+
